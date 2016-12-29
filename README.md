@@ -3,6 +3,11 @@ ADT template to help quickly create new screen following MVP pattern
 
 MVP patern for Android was based on [todo-mvp/](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
 
+
+![menu](https://s28.postimg.org/9s6r14159/menu.png "menu")
+
+![template](https://s28.postimg.org/69ur4q099/template.png "templates")
+
 Setup
 -----
 
