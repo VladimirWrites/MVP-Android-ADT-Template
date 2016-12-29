@@ -45,6 +45,13 @@
 		help="ActivityMain (false) or MainActivity (true)" />
 
 	<parameter
+		id="withoutActivity"
+		name="Create without Activity class? (Activity Layout Name will be ignored)"
+		type="boolean"
+		default="false"
+		help="This is useful if you already have Activity that will hold fragment" />
+
+	<parameter
 		id="packageName"
 		name="Package name"
 		type="string"
