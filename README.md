@@ -1,5 +1,7 @@
-# MVC-Android-ADT-Template
-ADT template to help quickly create new screen following MVC pattern
+# MVP-Android-ADT-Template
+ADT template to help quickly create new screen following MVP pattern
+
+MVP patern for Android was based on [todo-mvp/](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
 
 Setup
 -----
