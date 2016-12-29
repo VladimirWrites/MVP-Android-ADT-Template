@@ -1,0 +1,57 @@
+<template format="4"
+		revision="1"
+		name="MvpActivity"
+		description="Creates a new MVP classes - Presenter, View (Fragment), Activity and Contract between the two">
+ 
+	<category value="Other"/>
+ 
+	<parameter id="className"
+		name="Functionality Name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default="Main"
+		help="The name of the functionality that requires MVP views"/>
+
+	<parameter
+		id="fragmentLayoutName"
+		name="Fragment Layout Name"
+		type="string"
+		constraints="layout|nonempty|unique"
+		default="fragment_test"
+		suggest="fragment_${classToResource(className)}"
+		help="The name of the layout to create" />
+
+	<parameter
+		id="activityLayoutName"
+		name="Activity Layout Name"
+		type="string"
+		constraints="layout|nonempty|unique"
+		default="activity_test"
+		suggest="activity_${classToResource(className)}"
+		help="The name of the layout to create" />
+
+	<parameter
+		id="databinding"
+		name="Use Data Binding?"
+		type="boolean"
+		default="true"
+		help="If Data Binding is used needed parts of code will be generated." />
+
+	<parameter
+		id="classNameFirst"
+		name="Should class name be first? (true -> MainActivity)"
+		type="boolean"
+		default="false"
+		help="ActivityMain (false) or MainActivity (true)" />
+
+	<parameter
+		id="packageName"
+		name="Package name"
+		type="string"
+		constraints="package"
+		default="com.mycompany.myapp" />
+
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+ 
+</template>
