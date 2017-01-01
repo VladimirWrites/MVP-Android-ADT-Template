@@ -1,12 +1,11 @@
 # MVP Android ADT Template
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/vlad1m1r990/MVP-Android-ADT-Template/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/vlad1m1r990/MVP-Android-ADT-Template.svg?style=flat)](https://github.com/vlad1m1r990/MVP-Android-ADT-Template/issues)
+[![GitHub stars](https://img.shields.io/github/stars/vlad1m1r990/MVP-Android-ADT-Template.svg?label=Star&style=flat)](https://github.com/vlad1m1r990/MVP-Android-ADT-Template/stargazers)
+
 ADT template to help quickly create new screen following MVP pattern
 
 MVP patern for Android was based on [todo-mvp/](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
-
-
-![menu](https://s28.postimg.org/9s6r14159/menu.png "menu")
-
-![template](https://s28.postimg.org/69ur4q099/template.png "templates")
 
 Setup
 -----
@@ -21,6 +20,8 @@ Usage
 
 - Android Studio: Right click on your application module and select **New > Other > MvpActivity**
 - Eclipse: Right click on your project and select **New > Other... > Android > Android Object > MvpActivity**
+
+[![template.jpg](https://s24.postimg.org/5163ened1/template.jpg)](https://s24.postimg.org/5163ened1/template.jpg)
 
 Credits
 -------
