@@ -18,7 +18,7 @@ import ${applicationPackage}.databinding.${underscoreToCamelCase(activityLayoutN
 </#if>
 
 public class ${activityClass} extends AppCompatActivity{
- 
+
     ${contractClass}.Presenter mPresenter;
 
 <#if databinding>
