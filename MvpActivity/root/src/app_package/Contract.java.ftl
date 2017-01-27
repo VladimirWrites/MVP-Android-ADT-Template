@@ -1,7 +1,4 @@
 package ${packageName};
-
-import ${packageName}.presentation.base.IPresenterBase;
-import ${packageName}.presentation.base.IViewBase;
  
 public interface ${contractClass} {
 

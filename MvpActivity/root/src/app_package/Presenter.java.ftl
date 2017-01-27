@@ -6,5 +6,6 @@ public class ${presenterClass} implements ${contractClass}.Presenter {
 
     public ${presenterClass}(${contractClass}.View view) {
         this.mView = view;
+        this.mView.setPresenter(this);
     }
 }
