@@ -11,7 +11,7 @@
 	<instantiate from="res/layout/fragment.xml.ftl"
 		to="${escapeXmlAttribute(resOut)}/layout/${fragmentLayoutName}.xml" />
 
-<#if !withoutActivity>
+<#if createActivity>
 	<merge from="AndroidManifest.xml.ftl"
 		to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
 	<instantiate from="res/layout/activity.xml.ftl"

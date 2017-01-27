@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <#if databinding>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -8,7 +9,7 @@
 </layout>
 <#else>
 <FrameLayout
-	xmlns:android="http://schemas.android.com/apk/res/android">
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 </FrameLayout>

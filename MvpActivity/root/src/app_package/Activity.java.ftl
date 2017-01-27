@@ -1,13 +1,28 @@
 package ${packageName};
 
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+
+<#if databinding>
+import android.databinding.DataBindingUtil;
+</#if>
+
+<#if applicationPackage??>
+import ${applicationPackage}.R;
+
+<#if databinding>
+import ${applicationPackage}.databinding.${underscoreToCamelCase(activityLayoutName)}Binding;
+</#if>
+
+</#if>
 
 public class ${activityClass} extends AppCompatActivity{
  
     ${contractClass}.Presenter mPresenter;
 
 <#if databinding>
-    private ${activityClass}Binding mBinding;
+    private ${underscoreToCamelCase(activityLayoutName)}Binding mBinding;
 </#if>
 
     @Override
@@ -31,6 +46,6 @@ public class ${activityClass} extends AppCompatActivity{
             transaction.commit();
         }
 
-        mPresenter = new ${presenterClass}(${fragmentClass});
+        mPresenter = new ${presenterClass}(fragment);
     }
 }

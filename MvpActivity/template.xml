@@ -1,7 +1,8 @@
-<template format="4"
-		revision="1"
-		name="MvpActivity"
-		description="Creates a new MVP classes - Presenter, View (Fragment), Activity and Contract between the two">
+<template 
+	format="4"
+	revision="1"
+	name="MvpActivity"
+	description="Creates a new MVP classes - Presenter, View (Fragment), Activity and Contract between the two">
  
 	<category value="Other"/>
  
@@ -22,13 +23,21 @@
 		help="The name of the layout to create" />
 
 	<parameter
+		id="createActivity"
+		name="Create Activity class?"
+		type="boolean"
+		default="true"
+		help="This is useful if you already have Activity that will hold fragment" />
+
+	<parameter
 		id="activityLayoutName"
 		name="Activity Layout Name"
 		type="string"
 		constraints="layout|nonempty|unique"
 		default="activity_test"
 		suggest="activity_${classToResource(className)}"
-		help="The name of the layout to create" />
+		help="The name of the layout to create"
+		visibility="createActivity" />
 
 	<parameter
 		id="databinding"
@@ -43,13 +52,6 @@
 		type="boolean"
 		default="false"
 		help="ActivityMain (false) or MainActivity (true)" />
-
-	<parameter
-		id="withoutActivity"
-		name="Create without Activity class? (Activity Layout Name will be ignored)"
-		type="boolean"
-		default="false"
-		help="This is useful if you already have Activity that will hold fragment" />
 
 	<parameter
 		id="packageName"
